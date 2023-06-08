@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         const arr=[10,12,14,2,10,5,2];
+         
+         const index=arr.indexOf(22);
+         if (index!==-1) {
+         console.log("Method 1: Number 22 is found at index",index);
+         } else {
+         console.log("Method 1: Number 22 is not found in the array");
+         }
+         
+         const found = arr.includes(22);
+         if (found) {
+         console.log("Method 2: Number 22 is found in the array");
+         } else {
+         console.log("Method 2: Number 22 is not found in the array");
+         }
+      </script>
+   </body>
+</html>

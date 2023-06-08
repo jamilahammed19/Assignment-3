@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         function Book(name, author, price) {
+         this.name = name;
+         this.author = author;
+         this.price = price;
+         }
+         
+         const book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", 12.99);
+         const book2 = new Book("To Kill a Mockingbird", "Harper Lee", 9.99);
+         
+         const books = [book1, book2];
+         
+         for (let i = 0; i < books.length; i++) {
+         const book = books[i];
+         console.log("Book Name:", book.name);
+         console.log("Author:", book.author);
+         console.log("Price:", book.price);
+         console.log("---------------------");
+         }
+         
+      </script>
+   </body>
+</html>
